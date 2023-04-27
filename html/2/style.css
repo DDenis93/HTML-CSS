@@ -1,0 +1,14 @@
+body{
+	color: rgb(36,0,136);
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 40px;
+	font-family: Arial;
+}
+li{
+	border: solid;
+	border-radius: 15px;
+	border-width: 1px;
+	white-space: pre;
+	margin-top: 2px;
+}

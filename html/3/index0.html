@@ -1,0 +1,168 @@
+<html>
+	<head>
+		<link href="style.css" rel="stylesheet">
+		<style>
+			
+
+.dropdown {
+  position: absolute;
+  margin: -60px 0 0 200px;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: greenyellow;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 30px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropright:hover + .dropright-content {
+  display: block;
+}
+
+.dropright-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 30px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropright-content a {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropright-content a:hover {
+  background-color: #ddd;
+}
+
+.dropright:hover .dropright-content {
+  display: block;
+}
+
+		</style>
+	</head>
+	<body>
+		<form autocomplete="on" id="form1">
+			<fieldset>
+				<legend>Текстовая информация</legend>
+				<input type="text" list="color1">
+				<datalist id="color1">
+					<option value="RED">Красный</option>
+					<option value="YELLOW">Желтый</option>
+					<option value="GREEN">Зеленый</option>
+				</datalist>		
+				<label>Метка</label>
+				<select name="select3">
+					<optgroup label="Категория 1">
+						<option value="1">Текст 1</option>
+						<option value="2">Текст 2</option>
+						<option value="2">Текст 3</option>
+						<option value="4">Текст 4</option>
+					</optgroup>
+					<optgroup label="Категория 2">
+						<option value="1">Текст 1</option>
+						<option value="2">Текст 2</option>
+						<option value="2">Текст 3</option>
+						<option value="4">Текст 4</option>
+					</optgroup>
+					<optgroup label="Категория 3">
+						<option value="1">Текст 1</option>
+						<option value="2">Текст 2</option>
+						<option value="2">Текст 3</option>
+						<option value="4">Текст 4</option>
+					</optgroup>
+				</select>
+				<input type="button" value="Нажми на меня" disabled><br><hr>
+			</fieldset>
+			<input type="submit" formaction=""><br><hr>
+			<input type="reset"><br><hr>
+			<input type="image" src="1.jpg" width="50px" alt="Текст"><br><hr>
+			<label>
+				Логин:<input type="text" maxlength="6" pattern="[0-9]{6}" title="введите 6 цифр" placeholder="000000" autofocus readonly size="10">
+			</label>
+			<label for="psw">Пароль</label>
+			<input type="password" name="psw" id="psw"><br><hr>
+			<input type="file" multiple accept="image/*"><br><hr>
+			Емейл:<input type="email" required><br><hr>
+			Телефон:<input type="tel"><br><hr>
+			URL:<input type="url"><br><hr>
+			Поиск:<input type="search"><br><hr>
+			Дата:<input type="date"><br><hr>
+			Дата локальняа:<input type="datetime-local"><br><hr>
+			Месяц:<input type="month"><br><hr>
+			Неделя:<input type="week"><br><hr>
+			Время:<input type="time"><br><hr>
+			Число:<input type="number" step="0.1" value="5" min="1" max="10"><br><hr>
+			Полоса:<input type="range" step="0.1" value="5" min="1" max="10"><br><hr>
+			Цвет:<input type="color"><br><hr>
+			Галочка:<input type="checkbox" checked>Согласен на обработку персональных данных<br><hr>
+			Вариант 1:<input type="radio" name="choice">Вариант 1<br><hr>
+			Вариант 2:<input type="radio" name="choice">Вариант 2<br><hr>
+			Вариант 3:<input type="radio" name="choice">Вариант 3<br><hr>
+			Емейл:<input type="email" form="form1"><br><hr>
+			<textarea rows="10" cols="50" placeholder="Оставьте сообщение" minlength="5">
+			</textarea>
+			<button type="button"><i>Нажми</i></button>
+			<select name="select1">
+				<option value="1">Текст 1</option>
+				<option value="2">Текст 2</option>
+				<option value="2">Текст 3</option>
+				<option value="4">Текст 4</option>
+			</select>
+			<select name="select2" multiple>
+				<option value="1">Текст 1</option>
+				<option value="2">Текст 2</option>
+				<option value="2">Текст 3</option>
+				<option value="4">Текст 4</option>
+			</select>
+
+			<br><br><br><br>
+<div class="dropdown">
+  <div class="dropbtn">≡ Каталог</div>
+  <div class="dropdown-content"><a class="dropright" href="#">Одежда</a>
+    <div class="dropright-content">
+      <a href="#">Мужская одежда</a>
+      <a href="#">Женская одежда</a>
+    </div>
+    <a href="#">Электроника</a>
+    <a href="#">Книги</a>
+  </div>
+</div>
+
+
+			
+		</form>
+	</body>
+</html>
