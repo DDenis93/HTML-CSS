@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		div font{
+			background-color: blue;
+		}
+		div>font{
+			background-color: red;
+		}
+		div+font{
+			background-color: green;
+		}
+		div~font{
+			background-color: yellow;
+		}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Заголовок 1</h1>
+		<font>Текстовое сообщение 1</font>
+		<div>
+			<font>Текстовое сообщение 2</font>
+			<h2>Текстовое <font>сообщение 3</font></h2>
+			<p>Текстовое <font>сообщение 4</font></p>
+		</div>
+		<font>Текстовое сообщение 5</font>
+		<font>Текстовое сообщение 6</font>
+	</body>
+</html>

@@ -1,0 +1,11 @@
+p,a,div {
+	text-align: justify;
+	font-family:Arial;
+	font-size:14px;
+	color:darkorange;
+}
+
+p[align]{
+	font-size:20px;
+	color:blue;
+}

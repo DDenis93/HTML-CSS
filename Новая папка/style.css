@@ -1,0 +1,37 @@
+body{
+	font-family: Arial;
+	padding: 50px;
+}
+h1{
+	font-size: 18pt;
+	font-weight: 900;
+}
+h2{
+	font-size: 16pt;
+}
+h3{
+	font-size: 14pt;
+	font-style: italic;
+}
+hr{
+	border-top: 2px dashed orange;
+}
+p{
+	font-size: 12pt;
+	color: gray;
+}
+div#div1{
+	width: 45%;
+	float:left;
+	padding: 10px;
+}
+div#div2{
+	width: 45%;
+	float:right;
+	padding: 10px;
+}
+img{
+	width: 90px;
+	height: 90px;
+	border-radius:100px;
+}
